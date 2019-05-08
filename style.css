@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+  left: 0;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  min-height: 100%;
+  background: black;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: 'Bangers',sans-serif;
+}
+
+p {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+
+button {
+  background: #1DA9FC;
+  padding: 8px 30px;
+  color: white;
+  border-radius: 4px;
+  border: 1px solid #1DA9FC;
+}
+
+button:hover {
+  background: white;
+  color: #1DA9FC;
+  cursor: pointer;
+}
+
+.header {
+  padding: 30px;
+  background: white;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.container {
+  width: 75%;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flexWrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.justifyCenter {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flexColumn {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.justifyBetween {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-container {
+  cursor: pointer;
+  height: 300px;
+  -webkit-perspective: 600;
+          perspective: 600;
+  position: relative;
+  width: 300px;
+  margin: 30px;
+}
+
+.card {
+  -webkit-box-shadow: 1px 4px 5px rgba(153, 153, 153, 0.2);
+          box-shadow: 1px 4px 5px rgba(153, 153, 153, 0.2);
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+
+.card:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card .side {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+
+.card .back {
+  background: #eaeaed;
+  color: #0087cc;
+  text-align: center;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+
+.back h1 {
+  font-size: 40px;
+  padding-top: 45px
+}
